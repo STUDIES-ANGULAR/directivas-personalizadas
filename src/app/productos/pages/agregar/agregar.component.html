@@ -16,7 +16,9 @@
 
         <div class="col-auto">
             <span class="form-text"
-                  *ngIf="tieneError('nombre')"  >
+                  error-msg
+                  colorError="blue"
+                  *ngIf="tieneError('nombre')">
                 Este campo es requerido
             </span>
         </div>
