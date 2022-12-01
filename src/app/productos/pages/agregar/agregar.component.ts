@@ -23,11 +23,11 @@ export class AgregarComponent {
   }
 
   cambiarMensaje(): void {
-    this.mensaje = 'mensaje cambiado';
+    this.mensaje = Math.random().toString();
   }
 
-  cambiarColor(){
-    this.color = 'green';
-
+  cambiarColor(): void{
+    const color = "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
+    this.color = color;
   }
 }
