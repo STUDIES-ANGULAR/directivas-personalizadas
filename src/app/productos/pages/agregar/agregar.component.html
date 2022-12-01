@@ -43,3 +43,13 @@
 <h3 class="mt-5"> Formulario </h3>
 <pre> Value: {{ miFormulario.value | json }}</pre>
 <pre> Valid: {{ miFormulario.valid }}</pre>
+
+<!-- con el *  al lado de la directiva customIf mandamos la referencia al elemento html -->
+<div class="row mt-5" 
+     *customIf="miFormulario.valid">     
+    <div class="col">
+        <div class="alert alert-primary">
+            Todo OK!
+        </div>
+    </div>
+</div>
